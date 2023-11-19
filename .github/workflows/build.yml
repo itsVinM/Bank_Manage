@@ -13,16 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up CMake
-      uses: lukka/run-cmake@v2
-      with:
-        cmakeListsOrSettingsJson: 'CMakeLists.txt'
+      - name: Set up CMake
+        uses: lukka/run-cmake@v2
+        with:
+          cmakeListsOrSettingsJson: 'CMakeLists.txt'
+          buildDir: 'build'
 
-    - name: Build
-      run: cmake --build build
+      - name: Build
+        run: cmake --build build
 
-    - name: Test
-      run: cmake --build build --target test
+      - name: Test
+        run: cmake --build build --target test
