@@ -28,7 +28,7 @@ add_executable(Bank_ManageTests ${TEST_SOURCES} ${HEADERS})
 target_include_directories(Bank_ManageTests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Link the main executable and any other libraries needed for tests
-target_link_libraries(Bank_ManageTests PRIVATE Bank_Managing)
+target_link_libraries(Bank_ManageTests PRIVATE Bank_Manage)  # Fix the library name
 
 # Add tests
-add_test(NAME Bank_ManageTests COMMAND Bank_ManagingTests)
+add_test(NAME Bank_ManageTests COMMAND Bank_ManageTests)
