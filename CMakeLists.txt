@@ -1,7 +1,7 @@
 # CMakeLists.txt
 
 cmake_minimum_required(VERSION 3.10)
-project(BankMng)
+project(Bank_Managing)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -25,10 +25,10 @@ file(GLOB_RECURSE TEST_SOURCES "test/*.cpp")
 add_executable(Bank_ManagingTests ${TEST_SOURCES} ${HEADERS})
 
 # Specify include directories for tests
-target_include_directories(BBank_ManagingTests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(Bank_ManagingTests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Link the main executable and any other libraries needed for tests
-target_link_libraries(Bank_ManagingTests PRIVATE BankMng)
+target_link_libraries(Bank_ManagingTests PRIVATE Bank_Managing)
 
 # Add tests
-add_test(NAME Bank_ManagingTests COMMAND BankMngTests)
+add_test(NAME Bank_ManagingTests COMMAND Bank_ManagingTests)
