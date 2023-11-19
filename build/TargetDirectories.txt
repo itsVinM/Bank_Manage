@@ -1,3 +1,0 @@
-/home/vin/Desktop/BankMng/build/CMakeFiles/BankMng.dir
-/home/vin/Desktop/BankMng/build/CMakeFiles/edit_cache.dir
-/home/vin/Desktop/BankMng/build/CMakeFiles/rebuild_cache.dir
