@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD 11)
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 file(GLOB_RECURSE HEADERS "include/*.h")
 
-# Add executable and source files
+# Add main executable and source files
 add_executable(BankMng ${SOURCES} ${HEADERS})
 
 # Specify include directories
